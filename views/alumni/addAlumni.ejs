@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/addAlumni.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Get Added</title>
+</head>
+<body>
+    <section class="get-in-touch">
+        <h1 class="title">Get Added As Alumni</h1>
+        <form class="contact-form row" method="post" action="/postaddAluminiData">
+           <div class="form-field col-lg-6">
+              <input id="name" name = "name" class="input-text js-input" type="text" required value="<%=user.name%>">
+              <label class="label" for="name">Name</label>
+           </div>
+           <div class="form-field col-lg-6 ">
+              <input id="email" name="email" class="input-text js-input" type="email" required value="<%=user.email%>">
+              <label class="label" for="email">E-mail</label>
+           </div>
+           
+            <div class="form-field col-lg-6 ">
+              <input id="passoutYear" name="passoutYear" class="input-text js-input" type="text" required>
+              <label class="label" for="passoutYear">Passout Year</label>
+           </div>
+           <div class="form-field col-lg-6 ">
+            <input id="gender" name="gender" class="input-text js-input" type="text" required>
+            <label class="label"  for="gender">Gender</label>
+         </div>
+         <div class="form-field col-lg-6 ">
+            <input id="company" name="company" class="input-text js-input" type="text" required>
+            <label class="label" for="company">Company Name</label>
+         </div>
+         <div class="form-field col-lg-6 ">
+            <input id="position" name="position" class="input-text js-input" type="text" required>
+            <label class="label" for="position">Current Position</label>
+         </div>
+           <div class="form-field col-lg-12">
+              <input id="bio" name="bio" class="input-text js-input" type="text" required>
+              <label class="label" for="bio">Bio</label>
+           </div>
+           <div class="form-field col-lg-12">
+              <input class="submit-btn" type="submit" value="Submit">
+           </div>
+        </form>
+     </section>
+     
+</body>
+</html>

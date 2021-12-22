@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add addExperience</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/addExperience.css">
+
+</head>
+<body>
+    <div class="form-body">
+        <div class="row justify-content-center">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Add Placement</h3>
+                        <p>Fill in the data below.</p>
+                        <form class="requires-validation" novalidate method="post" action="/postPlacementData">
+
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="company" placeholder="Name of Company" required>
+                               <div class="valid-feedback">Company name field is valid!</div>
+                               <div class="invalid-feedback">Company name field cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="package" placeholder="Package" required>
+                                 <div class="valid-feedback">package field is valid!</div>
+                                 <div class="invalid-feedback">package field cannot be blank!</div>
+                            </div>
+
+                            <input type="hidden" name="rollNumber" value="<%=student.rollNumber%>">
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary">Add</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/addExperience.js"></script>
+</body>
+</html>

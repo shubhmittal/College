@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Placement Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        /*-----------------------------------------------------
+     # Services
+     -----------------------------------------------------*/
+     .services {
+         padding-bottom: 30px;
+         text-align: center;
+         padding: 50px 0px;
+     }
+     .services .section-title h2 {
+         color: #444;
+         font-size: 42px;
+     }
+     .services .section-title p {
+         text-align: center;
+         font-style: italic;
+         margin-bottom: 40px;
+         color: #666;
+     }
+     .services .service-box {
+         margin-bottom: 30px;
+         padding: 15px;
+         text-align: center;
+         box-shadow: 0px 0 5px #bdbdbd;
+         float: left;
+         position: relative;
+         z-index: 1;
+         overflow: hidden;
+     }
+     .services .service-box::after {
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         background: #f1f1f1;
+         left: 0px;
+         top: -500px;
+         z-index: -1;
+         transition: 1s;
+     }
+     .services .service-box:hover::after {
+         top: 0px;
+     }
+     .services i {
+         display: flex;
+         justify-content: center;
+     }
+     .services i {
+         width: 70px;
+         height: 70px;
+         margin-bottom: 30px;
+         background: #ffffff;
+         border-radius: 100%;
+         transition: 0.5s;
+         color: #28a745;
+         font-size: 35px;
+         overflow: hidden;
+         padding-top: 18px;
+         box-shadow: 0px 0 5px #bdbdbd;
+         margin: 10px auto 15px;
+     }
+     .services h4 {
+         font-weight: 600;
+         margin-bottom: 15px;
+         font-size: 18px;
+         position: relative;
+     }
+     .services h4 a {
+         color: #444;
+         text-decoration: none;
+     }
+     .services h4 a:hover {
+         color: #28a745;
+     }
+     .services p {
+         line-height: 24px;
+         font-size: 14px;
+     }
+     .search-bar {
+         border: 1px solid black;
+         border-radius: 10px;
+
+     }
+     </style>
+</head>
+<body>
+
+   <!-- ======= Services Section ======= -->
+   <section class="services">
+      <div class="container">
+         <div class="section-title">
+            <h2>Placement Services</h2>
+         </div>
+         <div class="row">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+               <div class="service-box">
+                  <i class="fas fa-basketball-ball"></i>
+                  <h4><a href="">Search by Roll Number</a></h4>
+                  <p>You can search the placement of a student by roll number.</p>
+                  <form style="width: 100%;" method="post" action="/getPlacementProfileByRollNumber">
+                    <input type="search" name="rollNumber" class="search-bar">
+                    <br>
+                    <button type="submit" class="btn btn-success center-block mt-2 mb-2">Search</button>  
+                  </form>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+               <div class="service-box">
+                  <i class="fas fa-football-ball"></i>
+                  <h4><a href="">Search By Branch And Year</a></h4>
+                  <p>You can search the results by branch and year</p>
+                  <br>
+                  <br>
+                  <a href="getAllPlacementsByBranchAndYear" class="btn btn-success center-block mt-2 mb-2">Check</a>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+               <div class="service-box">
+                  <i class="fas fa-futbol"></i>
+                  <h4><a href="">Sheets By Branch And Year</a></h4>
+                  <p>TPRs can get the placement sheets filtered by branch and year by checking here</p>
+                  <br>
+                  <a href="/getExcelAllPlacementsByBranchAndYear" class="btn btn-success center-block mt-2 mb-2">Check</a>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+               <div class="service-box">
+                  <i class="fas fa-futbol"></i>
+                  <h4><a href="">Condtional Sheets</a></h4>
+                  <p>TPRs can get the placement sheets filtered condtionally by checking here</p>
+                  <br>
+                  <a href="/excelPlacementsConditionalFilter" class="btn btn-success center-block mt-2 mb-2">Check</a>
+               </div>
+            </div>
+            <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up">
+               <div class="service-box">
+                  <i class="fas fa-volleyball-ball"></i>
+                  <h4><a href="">Volleyball</a></h4>
+                  <p>Volleyball is a team sport in which two teams of six players are separated by a net. Each team tries to score points by grounding</p>
+                  <a href="#" class="btn btn-success center-block mt-2 mb-2">Read More »</a>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+               <div class="service-box">
+                  <i class="fas fa-dumbbell"></i>
+                  <h4><a href="">Dumbbell</a></h4>
+                  <p>Aurion Set of 2 PVC Dumbbells Weights Fitness Home Gym Exercise Barbell Light Heavy for Women & Men’s Dumbbell Aurion</p>
+                  <a href="#" class="btn btn-success center-block mt-2 mb-2">Read More »</a>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+               <div class="service-box">
+                  <i class="fas fa-table-tennis"></i>
+                  <h4><a href="">Table-Tennis</a></h4>
+                  <p>Table tennis, also known as ping-pong, is a sport in which two or four players hit a lightweight ball back and forth</p>
+                  <a href="#" class="btn btn-success center-block mt-2 mb-2">Read More »</a>
+               </div>
+            </div>
+         </div> -->
+      </div>
+   </section>
+   <!-- End Services Section -->
+</body>
+</html>

@@ -1,0 +1,134 @@
+.other-heading
+{
+    color: rgb(190, 104, 183);
+    text-shadow: 2px 2px hsl(0, 0%, 99%);
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.get-info
+{
+    background-image: url('/icon/test.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+.det-head
+{
+    color: rgb(253, 253, 253);
+    font-size: 3rem;
+}
+.con
+{
+    margin-top: 2%;
+}
+
+.form-heading 
+{
+    color: #fff020;
+    text-shadow: 1px 0.5px hsl(0, 0%, 0%);
+}
+.form-heading h2
+{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+form div input
+{
+    font-size: 1.1rem;
+}
+
+input:focus
+{
+    font-size: 1.2rem;
+    outline: none;
+}
+p
+{
+    color: rgb(29, 131, 138);
+    font-size: 1.3rem;
+}
+.details
+{
+    background-image: url('/icon/qurantine.png');
+    background-repeat: repeat;
+    background-size: 50%;
+    padding-bottom: 12%;
+}
+.srch-btn
+{
+    background-color: peru;
+    color:white;
+    font-size: 1.2rem ;
+    font-weight: 600;
+}
+.card-li div h4 , .card-li h4
+{
+    color: olive;
+}
+.card-li div #btn1 , .card-li div #btn2 
+{
+    background-color: cornflowerblue;
+}
+.card-li div #btn3 
+{
+    background-color: salmon;
+    border: none;
+}
+.card-li div #btn4
+{
+    background-color: rgb(189, 189, 0);
+    border: none;
+}
+ul .card-li
+{
+    border-radius: 20px;
+}
+@media(max-width:600px)
+{
+    .get-info
+    {
+        background-image: url('/icon/test2.jpg');
+    }
+    .icon
+    {
+        visibility: hidden;
+    }
+    .form-heading
+    {
+        color: #fff23c;
+        text-shadow: 1px 0.5px hsl(0, 0%, 0%);
+        
+    }
+    .form-heading h2
+    {
+        font-weight: 600;
+    }
+    p
+    {
+        color: rgb(0, 145, 109);
+        font-size: 1.1rem;
+    }
+    .other-heading
+    {
+        margin-top: 20px;
+        color: rgb(199, 38, 191);
+        font-weight: 400;
+        font-size:2.5rem ;
+        text-shadow: none;
+    }
+    .det-head
+    {
+        font-size: 2.5rem;
+    }
+    .srch-btn
+    {
+        background-color: khaki;
+        color: lightcoral;
+        font-size: 1.2rem ;
+        font-weight: 600;
+    }
+}
